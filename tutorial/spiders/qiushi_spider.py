@@ -41,6 +41,6 @@ class QiushiSpider(scrapy.Spider):
         cur.close()
         conn.close()
         
-		#settings = get_project_settings()
-		#mailer = MailSender.from_settings(settings)
-		#mailer.send(to='jeremy.h@foxmail.com',subject='qiushibaike',body=str,mimetype='text/plain;charset="utf-8"')
+        settings = get_project_settings()
+        mailer = MailSender.from_settings(settings)
+        mailer.send(to=['1053995075@qq.com','jeremy.h@foxmail.com'],subject='qiushibaike',body=str,cc=None,mimetype='text/plain;charset="utf-8"')
